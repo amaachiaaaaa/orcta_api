@@ -29,3 +29,10 @@ navLinks.addEventListener('click', () => {
         navLinks.classList.remove('active');
     }
 });
+
+function toggleMenu() {
+  const menu = document.getElementById("ul-list");
+  const hamburger = document.querySelector(".hamburger");
+  menu.classList.toggle("show");
+  hamburger.classList.toggle("open");
+}
