@@ -17,13 +17,14 @@ body {
 #navlinks{
     display: flex;
     justify-content: space-between;
+    width: 1000px;
 }
 
 #logo{
     text-decoration: none;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40pt;
+    font-size: 20pt;
     font-weight: bolder;
     
 }
@@ -32,8 +33,8 @@ body {
     display: flex;
     list-style: none;
     gap: 30px;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     
 }
 
