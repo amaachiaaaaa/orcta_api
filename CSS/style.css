@@ -14,48 +14,53 @@ body {
 }
 
 /* Navbar */
-.navbar {
+#navlinks{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-    background: #007BFF;
-    color: #fff;
-}
-.navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    padding: 0;
+#logo{
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40pt;
+    font-weight: bolder;
     
 }
 
-.nav-links li {
-    margin: 0 1rem;
+#ul-list{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.nav-links a {
+.navitem{
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-.cta-button {
-    background: black;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
+    color: black;
+    font-size: 15pt;
 }
 
-.cta-button:hover {
-    background: rgba(0, 0, 255, 0.507);
+.navitem:hover{
+    color: blue;
 }
+
+.btn{
+    background-color: transparent;
+    padding: 15px 30px;
+    border-radius: 1rem;
+    border: none;
+    background-color: blue;
+    color: white;
+    
+}
+
+.btn:hover{
+    background-color: #044462;
+}
+
 
 /* Hero Section */
 .hero {
