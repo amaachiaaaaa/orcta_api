@@ -11,14 +11,25 @@ body {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
+   
 }
 
 /* Navbar */
 #navlinks {
     display: flex;
     justify-content: space-between;
-    width: 1000px;
+    width: 100%; /* Makes the nav bar stretch across the entire width of the screen */
+    position: fixed; /* Keeps the nav bar fixed at the top */
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    z-index: 1000;
+    background-color: rgba(0, 0, 255, 0.479); /* Semi-transparent blue background */
+    border-radius: 0; /* Removes rounded corners to fill the screen */
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+    border-radius: 3rem;
 }
+
 
 #logo {
     text-decoration: none;
@@ -40,6 +51,7 @@ body {
     text-decoration: none;
     color: black;
     font-size: 15pt;
+    
 }
 
 .navitem:hover {
@@ -53,6 +65,7 @@ body {
     border: none;
     background-color: blue;
     color: white;
+    
 }
 
 .btn:hover {
@@ -128,6 +141,82 @@ body {
     margin-bottom: 2rem;
 }
 
+
+/* General Section Styling */
+#about-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Spacing between grid items */
+    padding: 40px;
+    background-color: #f9f9ff; /* Light background color */
+    text-align: center;
+    border-radius: 1rem; /* Rounded corners for the section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px auto;
+    max-width: 1200px; /* Center the section and limit its width */
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+/* Individual Content Block Styling */
+.content-block {
+    background-color: white; /* White background for each block */
+    padding: 20px;
+    border-radius: 1rem; /* Rounded corners for the blocks */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for each block */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Blocks */
+.content-block:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Section Title Styling */
+.section-title {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Adds spacing between letters */
+}
+
+/* Section Text Styling */
+.section-text {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6; /* Improves readability */
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about-section {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .section-title {
+        font-size: 1.5rem; /* Slightly reduce title font size */
+    }
+
+    .section-text {
+        font-size: 0.9rem; /* Adjust text size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.3rem; /* Further reduce title font size */
+    }
+
+    .section-text {
+        font-size: 0.85rem; /* Further adjust text size */
+    }
+}
+
+
 /* Features Section */
 .features {
     padding: 4rem 0;
@@ -155,6 +244,191 @@ body {
     margin-bottom: 1rem;
     color: #007BFF;
 }
+
+/* General Section Styling */
+#tech-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f4f9;
+    border-radius: 1rem;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Header Styling */
+.section-header {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/* Grid Layout */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Individual Card Styling */
+.tech-card {
+    background: white;
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Hover Effects for Cards */
+.tech-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Avatar Styling */
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #ddd;
+}
+
+/* Name and Role Styling */
+.tech-name {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.tech-role {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+.learn-more-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 1rem;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #777;
+    font-weight: bold;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+/* General Section Styling */
+#target-market-graph {
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f4f9;
+    border-radius: 1rem;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+/* Graph Container */
+.graph-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+/* Individual Graph Bar Styling */
+.graph-bar {
+    text-align: center;
+    width: 150px;
+}
+
+.bar {
+    width: 100%;
+    height: 0; /* Start height at 0 for animation */
+    background-color: #007bff;
+    border-radius: 5px 5px 0 0;
+    transition: height 2s ease-out; /* Smooth height transition */
+    position: relative;
+}
+
+.bar:hover {
+    background-color: #0056b3;
+}
+
+/* Bar Label Styling */
+.graph-bar p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.value {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+
 
 /* Footer */
 .footer {

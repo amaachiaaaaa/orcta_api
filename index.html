@@ -35,10 +35,34 @@
     <section id="hero" class="hero">
         <div class="container">
             <h1>Welcome to Orcta Technologies</h1>
-            <p>Building the Future, Tigether with Tailored Tech Solutions.</p>
+            <p>Building the Future, Together with Tailored Tech Solutions.</p>
             <button class="btn">Explore Now</button>
         </div>
     </section>
+
+    <section id="about-section">
+        <div class="content-block">
+            <h2 class="section-title">About Us</h2>
+            <p class="section-text">
+                Orcta Technologies is your trusted partner in navigating the digital landscape, combining innovative hardware and software solutions to bring your business vision to life. We are dedicated to delivering tailored, high-quality technology solutions with a focus on client success and exceptional customer service. At Orcta Technologies, we don't just build projects; we build the future, together.
+            </p>
+        </div>
+    
+        <div class="content-block">
+            <h2 class="section-title">Our Mission</h2>
+            <p class="section-text">
+                Develop innovative technological solutions that enhance lives. Address everyday challenges through advanced technology. Promote digital inclusion and accessibility. Foster societal impact through technology-driven solutions.
+            </p>
+        </div>
+    
+        <div class="content-block">
+            <h2 class="section-title">Our Vision</h2>
+            <p class="section-text">
+                Orcta Technologies aims to become a global leader in technological innovation, providing integrated hardware and software solutions that empower businesses and individuals to achieve their full potential. We strive to create a lasting impact through our commitment to excellence, client-centric approach, and continuous adaptation to the evolving digital landscape.
+            </p>
+        </div>
+    </section>
+    
 
     <section id="features" class="features">
         <div class="container">
@@ -52,7 +76,7 @@
                         digital landscape.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>Results</h3>
+                    <h3>Outcome</h3>
                     <p>We create impactful results by delivering innovative and scalable solutions tailored to each
                         client's needs, improving operational efficiency and digital literacy. Through active
                         collaboration and deep technical expertise, we transform customer visions into practical,
@@ -90,6 +114,59 @@
             </div>
         </div>
     </section>
+
+    <section id="tech-section">
+        <h2 class="section-header">Meet Our Tech Innovators</h2>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <img src="avatar1.jpg" alt="Tech Innovator 1" class="avatar">
+                <h3 class="tech-name">Alice Johnson</h3>
+                <p class="tech-role">AI Specialist</p>
+                <button class="learn-more-btn" onclick="showInfo('Alice Johnson', 'Alice specializes in creating cutting-edge AI algorithms to solve complex problems.')">Learn More</button>
+            </div>
+            <div class="tech-card">
+                <img src="avatar2.jpg" alt="Tech Innovator 2" class="avatar">
+                <h3 class="tech-name">Michael Lee</h3>
+                <p class="tech-role">Cybersecurity Expert</p>
+                <button class="learn-more-btn" onclick="showInfo('Michael Lee', 'Michael designs secure networks to safeguard sensitive data from cyber threats.')">Learn More</button>
+            </div>
+            <div class="tech-card">
+                <img src="avatar3.jpg" alt="Tech Innovator 3" class="avatar">
+                <h3 class="tech-name">Sophia Wang</h3>
+                <p class="tech-role">Blockchain Developer</p>
+                <button class="learn-more-btn" onclick="showInfo('Sophia Wang', 'Sophia develops decentralized blockchain solutions to streamline operations securely.')">Learn More</button>
+            </div>
+        </div>
+        <div id="info-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">×</span>
+                <h3 id="modal-name"></h3>
+                <p id="modal-info"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="target-market-graph">
+        <h2 class="section-header">Target Market Overview</h2>
+        <div class="graph-container">
+            <div class="graph-bar">
+                <div class="bar" data-target="8500000"></div>
+                <p>Age Group (30-55 years)<br><span class="value">0</span></p>
+            </div>
+            <div class="graph-bar">
+                <div class="bar" data-target="2550000"></div>
+                <p>Middle to Upper Income Bracket<br><span class="value">0</span></p>
+            </div>
+            <div class="graph-bar">
+                <div class="bar" data-target="1275000"></div>
+                <p>Tech-Savvy Individuals<br><span class="value">0</span></p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
 
     <script src="./JS/script.js"></script>
 
