@@ -53,33 +53,3 @@ function closeModal() {
   modal.classList.add("hidden");
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const bars = document.querySelectorAll(".bar");
-
-  bars.forEach(bar => {
-      const targetValue = +bar.getAttribute("data-target"); // Get the target number
-      const valueDisplay = bar.nextElementSibling.querySelector(".value");
-      const heightPercent = (targetValue / 8500000) * 100; // Scale height relative to the largest value
-
-      let currentValue = 0; // Start value
-      const speed = 50; // Speed adjustment
-      const increment = Math.ceil(targetValue / speed); // Increment for each frame
-
-      // Animate Bar Height
-      bar.style.height = `${heightPercent}%`;
-
-      // Animate Number Count
-      const countUp = setInterval(() => {
-          if (currentValue < targetValue) {
-              currentValue += increment;
-              if (currentValue > targetValue) currentValue = targetValue; // Stop at target
-              valueDisplay.innerText = currentValue.toLocaleString(); // Format the number
-          } else {
-              clearInterval(countUp); // Stop the interval
-          }
-      }, 30); // Adjust speed of counting
-  });
-});
-
-
-

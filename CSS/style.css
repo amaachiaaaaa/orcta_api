@@ -377,66 +377,6 @@ body {
     color: #333;
 }
 
-/* General Section Styling */
-#target-market-graph {
-    text-align: center;
-    padding: 40px;
-    background-color: #f4f4f9;
-    border-radius: 1rem;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.section-header {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 30px;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
-}
-
-/* Graph Container */
-.graph-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: flex-end;
-}
-
-/* Individual Graph Bar Styling */
-.graph-bar {
-    text-align: center;
-    width: 150px;
-}
-
-.bar {
-    width: 100%;
-    height: 0; /* Start height at 0 for animation */
-    background-color: #007bff;
-    border-radius: 5px 5px 0 0;
-    transition: height 2s ease-out; /* Smooth height transition */
-    position: relative;
-}
-
-.bar:hover {
-    background-color: #0056b3;
-}
-
-/* Bar Label Styling */
-.graph-bar p {
-    font-size: 1rem;
-    color: #555;
-    margin-top: 10px;
-}
-
-.value {
-    font-weight: bold;
-    color: #333;
-    font-size: 1.1rem;
-}
-
-
 
 /* Footer */
 .footer {
