@@ -25,10 +25,18 @@ body {
     padding: 10px 20px;
     z-index: 1000;
     background-color: rgba(0, 0, 255, 0.479); /* Semi-transparent blue background */
-    border-radius: 0; /* Removes rounded corners to fill the screen */
-    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
     border-radius: 3rem;
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
 }
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    #navlinks {
+        background-color: transparent; /* Removes the background color on mobile view */
+        border-radius: 0; /* Removes the border radius for mobile */
+    }
+}
+
 
 
 #logo {
