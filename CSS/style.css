@@ -10,37 +10,52 @@ body {
     margin: 0 auto;
     max-width: 1200px;
 }
+
 header.navbar {
     background: radial-gradient(circle, #3D4AF6 100%, #303099 100%);
-    height: 600px; /* Adjust the height as needed */
-    border-bottom: 2px solid #e0e0e0; /* Adds a clean separation */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+    height: 650px;
+    /* Adjust the height as needed */
+    border-bottom: 2px solid #e0e0e0;
+    /* Adds a clean separation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adds a slight shadow for depth */
     display: flex;
-    align-items: flex-start; /* Aligns content to the top */
-    justify-content: center; /* Centers content horizontally */
-    padding-top: 20px; /* Add padding to separate from the top edge */
+    align-items: flex-start;
+    /* Aligns content to the top */
+    justify-content: center;
+    /* Centers content horizontally */
+    padding-top: 20px;
+    /* Add padding to separate from the top edge */
 }
 
 #navlinks {
     display: flex;
-    align-items: flex-start; /* Aligns items to the top */
+    align-items: flex-start;
+    /* Aligns items to the top */
     justify-content: space-between;
-    flex-wrap: wrap; /* Ensures it adapts to smaller screens */
-    width: 100%; /* Ensure it spans the header's width */
-    padding: 0 20px; /* Inner padding for spacing */
+    flex-wrap: wrap;
+    /* Ensures it adapts to smaller screens */
+    width: 100%;
+    /* Ensure it spans the header's width */
+    padding: 0 20px;
+    /* Inner padding for spacing */
 }
 
 #logo {
-    font-size: 24px; /* Increased size for better visibility */
+    font-size: 24px;
+    /* Increased size for better visibility */
     color: #333;
     font-weight: bold;
     text-decoration: none;
-    margin-bottom: 10px; /* Space below the logo */
+    margin-bottom: 10px;
+    /* Space below the logo */
 }
 
 .hamburger {
-    display: none; /* Hidden on larger screens */
+    display: none;
+    /* Hidden on larger screens */
 }
+
 #ul-list {
     display: flex;
     align-items: center;
@@ -51,68 +66,92 @@ header.navbar {
 }
 
 .navitem {
-    font-size: 16px; /* Adjusted for readability */
-    text-decoration: none; /* No underline by default */
-    color: white; /* White text */
+    font-size: 16px;
+    /* Adjusted for readability */
+    text-decoration: none;
+    /* No underline by default */
+    color: white;
+    /* White text */
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .navitem:hover {
-    color: #ffffff; /* Ensure hover text remains white */
-    text-decoration: underline; /* Underline on hover */
+    color: #ffffff;
+    /* Ensure hover text remains white */
+    text-decoration: underline;
+    /* Underline on hover */
 }
 
-.navitem:active, .navitem:focus, .navitem.active {
-    color: #ffffff; /* Ensure active text remains white */
-    text-decoration: underline; /* Underline for active/focus state */
+.navitem:active,
+.navitem:focus,
+.navitem.active {
+    color: #ffffff;
+    /* Ensure active text remains white */
+    text-decoration: underline;
+    /* Underline for active/focus state */
 }
 
 .btn {
     padding: 10px 20px;
-    border-radius: 10px; /* Makes the border more rounded */
-    background-color: transparent; /* Transparent background */
-    color: #ffffff; /* Text color matches the border */
-    border: 2px solid #ffffff; /* Border with the same color as the text */
+    border-radius: 10px;
+    /* Makes the border more rounded */
+    background-color: transparent;
+    /* Transparent background */
+    color: #ffffff;
+    /* Text color matches the border */
+    border: 2px solid #ffffff;
+    /* Border with the same color as the text */
     font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
 }
 
 .btn:hover {
-    background-color: #007BFF; /* Fills with color on hover */
-    color: white; /* Changes text color to white */
+    background-color: #007BFF;
+    /* Fills with color on hover */
+    color: white;
+    /* Changes text color to white */
 }
 
 
 .btn:active {
-    background-color: #004080; /* Slightly darker blue when active */
+    background-color: #004080;
+    /* Slightly darker blue when active */
 }
 
 @media (max-width: 768px) {
     .hamburger {
-        display: block; /* Display hamburger on smaller screens */
+        display: block;
+        /* Display hamburger on smaller screens */
         cursor: pointer;
     }
 
     #ul-list {
-        display: none; /* Initially hidden */
-        flex-direction: column; /* Stacked layout for smaller screens */
+        display: none;
+        /* Initially hidden */
+        flex-direction: column;
+        /* Stacked layout for smaller screens */
         gap: 20px;
         width: 100%;
         padding: 20px 0;
     }
 
     #ul-list.show {
-        display: flex; /* Shown when toggled */
+        display: flex;
+        /* Shown when toggled */
     }
 
     .navitem {
-        font-size: 18px; /* Slightly larger for better readability */
+        font-size: 18px;
+        /* Slightly larger for better readability */
     }
 
     #navlinks {
-        flex-direction: column; /* Reorganizes layout vertically */
-        align-items: flex-start; /* Align items to the left */
+        flex-direction: column;
+        /* Reorganizes layout vertically */
+        align-items: flex-start;
+        /* Align items to the left */
     }
 }
 
