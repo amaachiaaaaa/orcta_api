@@ -42,19 +42,13 @@ header.navbar {
     display: none; /* Hidden on larger screens */
 }
 #ul-list {
-    display: none; /* Initially hidden on mobile */
-    flex-direction: column; /* Stacked layout for mobile */
-    gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 100%;
 }
-
-#ul-list.show {
-    display: flex; /* Shown when toggled */
-}
-
 
 .navitem {
     font-size: 16px; /* Adjusted for readability */
