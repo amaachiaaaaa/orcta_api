@@ -11,6 +11,12 @@ nt.querySelectorAll('.nav-links a').forEach(link => {
         }
     });
 });
+// JavaScript to set the active link
+document.addEventListener("DOMContentLoaded", function() {
+  // Select the first navitem (Home)
+  var homeLink = document.querySelector('#ul-list .navitem');
+  homeLink.classList.add('active');
+});
 
 // Mobile menu toggle
 const navLinks = document.querySelector('.nav-links');
