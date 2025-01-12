@@ -305,8 +305,10 @@
         <br /><br /><br /><br /><br />
     
         <div class="flex flex-col sm:flex-row items-center sm:items-start">
+            <!-- Image Section (Capture Image) - appears first on mobile -->
+           
             <!-- Form Section -->
-            <div class="sm:w-1/2 mb-8 sm:mb-0 px-6">
+            <div class="sm:w-1/2 mb-8 sm:mb-0 px-6 order-2 sm:order-none">
                 <form class="bg-white p-8 rounded-lg shadow-md space-y-6">
                     <!-- First Name -->
                     <div>
@@ -345,47 +347,46 @@
                 </form>
             </div>
         
-            <!-- Image Section (Capture Image) -->
-            <div class="sm:w-1/2 text-center sm:text-left px-6 mb-8 sm:mb-0">
-                <img src="./images/capture.png" alt="Company Image" class="max-w-xs sm:max-w-xs md:max-w-sm lg:max-w-md object-cover rounded-lg shadow-md">
-            <br/><br/>
-        
             <!-- Contact Information Section Below the Image -->
             <div class="sm:w-1/2 text-center sm:text-left px-6">
+                <div class="sm:w-1/2 text-center sm:text-left px-6 mb-8 sm:mb-0 order-1 sm:order-none">
+                    <img src="./images/capture.png" alt="Company Image" class="max-w-xs sm:max-w-xs md:max-w-sm lg:max-w-md object-cover rounded-lg shadow-md">
+                </div>
+        <br/><br/>
                 <div class="space-y-4">
                     <!-- Address -->
-                    <div class="flex items-center justify-center sm:justify-start">
+                    <div class="flex items-center justify-start">
                         <div class="bg-gray-200 p-3 rounded-full">
                             <i class="fa fa-map-marker-alt text-[#3741C5]"></i>
                         </div>
-                        <div class="ml-2 text-left">
+                        <div class="ml-4 text-left">
                             <p class="text-sm font-semibold text-[#3741C5]">Address</p>
                             <p class="text-gray-600">1234 Street Name, City, Country</p>
                         </div>
                     </div>
                     
                     <!-- Phone -->
-                    <div class="flex items-center justify-center sm:justify-start">
+                    <div class="flex items-center justify-start">
                         <div class="bg-gray-200 p-3 rounded-full">
                             <i class="fa fa-phone-alt text-[#3741C5]"></i>
                         </div>
-                        <div class="ml-2 text-left">
+                        <div class="ml-4 text-left">
                             <p class="text-sm font-semibold text-[#3741C5]">Phone</p>
                             <p class="text-gray-600">+123 456 7890</p>
                         </div>
                     </div>
         
                     <!-- Email -->
-                    <div class="flex items-center justify-center sm:justify-start">
+                    <div class="flex items-center justify-start">
                         <div class="bg-gray-200 p-3 rounded-full">
                             <i class="fa fa-envelope text-[#3741C5]"></i>
                         </div>
-                        <div class="ml-2 text-left">
+                        <div class="ml-4 text-left">
                             <p class="text-sm font-semibold text-[#3741C5]">Email</p>
                             <p class="text-gray-600">contact@orcta.com</p>
                         </div>
                     </div>
-                </div></div>
+                </div>
             </div>
         </div>
     </section>
