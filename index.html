@@ -1,83 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orcta Technologie</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="font-sans bg-gray-50 flex flex-col min-h-screen">
 
-<header class="bg-[radial-gradient(circle,_#3D4AF6_100%,_#303099_100%)] p-4 text-white sticky top-0 z-50 shadow-lg">
-    <div class="flex justify-between items-center">
-        <div class="text-2xl font-bold">
-            <a href="#" class="nav-link" onclick="setActiveLink('home')">
-                <img src="./images/logo.png" alt="Logo" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
-            </a>
+    <header class="bg-[radial-gradient(circle,_#3D4AF6_100%,_#303099_100%)] p-4 text-white sticky top-0 z-50 shadow-lg">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <a href="#" class="nav-link" onclick="setActiveLink('home')">
+                    <img src="./images/logo.png" alt="Logo"
+                        class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+                </a>
+            </div>
+            <div class="lg:hidden">
+                <button onclick="toggleMenu()" class="text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="hidden lg:flex space-x-6 items-center">
+                <a href="#home" class="nav-link text-gray-300 hover:text-gray-400 transition duration-300"
+                    onclick="setActiveLink('home')">Home</a>
+                <a href="#who-we-are" class="nav-link text-gray-300 hover:text-gray-400 transition duration-300"
+                    onclick="setActiveLink('who-we-are')">Who We Are</a>
+                <a href="#what-we-do" class="nav-link text-gray-300 hover:text-gray-400 transition duration-300"
+                    onclick="setActiveLink('what-we-do')">What We Do</a>
+                <a href="#our-team" class="nav-link text-gray-300 hover:text-gray-400 transition duration-300"
+                    onclick="setActiveLink('our-team')">Our Team</a>
+                <a href="#blog" class="nav-link text-gray-300 hover:text-gray-400 transition duration-300"
+                    onclick="setActiveLink('blog')">Blog</a>
+                <button
+                    class="px-6 py-2 border-2 border-white text-white rounded-full bg-transparent hover:bg-blue-600 transition duration-300 hover:text-white focus:outline-none">
+                    Contact Us
+                </button>
+            </nav>
         </div>
-        <div class="lg:hidden">
-            <button onclick="toggleMenu()" class="text-white">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
-        <nav class="hidden lg:flex space-x-6 items-center">
-            <a href="#home" class="nav-link text-gray-300 hover:text-gray-400 transition duration-300" onclick="setActiveLink('home')">Home</a>
-            <a href="#who-we-are" class="nav-link text-gray-300 hover:text-gray-400 transition duration-300" onclick="setActiveLink('who-we-are')">Who We Are</a>
-            <a href="#what-we-do" class="nav-link text-gray-300 hover:text-gray-400 transition duration-300" onclick="setActiveLink('what-we-do')">What We Do</a>
-            <a href="#our-team" class="nav-link text-gray-300 hover:text-gray-400 transition duration-300" onclick="setActiveLink('our-team')">Our Team</a>
-            <a href="#blog" class="nav-link text-gray-300 hover:text-gray-400 transition duration-300" onclick="setActiveLink('blog')">Blog</a>
-            <button class="px-6 py-2 border-2 border-white text-white rounded-full bg-transparent hover:bg-blue-600 transition duration-300 hover:text-white focus:outline-none">
-                Contact Us
-            </button>
-        </nav>
+    </header>
+
+    <div id="mobileMenu" class="lg:hidden hidden bg-blue-600 text-white p-4">
+        <a href="#home" class="block py-2 nav-link text-gray-300 hover:text-gray-400 transition duration-300"
+            onclick="setActiveLink('home')">Home</a>
+        <a href="#who-we-are" class="block py-2 nav-link text-gray-300 hover:text-gray-400 transition duration-300"
+            onclick="setActiveLink('who-we-are')">Who We Are</a>
+        <a href="#what-we-do" class="block py-2 nav-link text-gray-300 hover:text-gray-400 transition duration-300"
+            onclick="setActiveLink('what-we-do')">What We Do</a>
+        <a href="#our-team" class="block py-2 nav-link text-gray-300 hover:text-gray-400 transition duration-300"
+            onclick="setActiveLink('our-team')">Our Team</a>
+        <a href="#blog" class="block py-2 nav-link text-gray-300 hover:text-gray-400 transition duration-300"
+            onclick="setActiveLink('blog')">Blog</a>
+        <button
+            class="px-4 py-2 sm:px-6 sm:py-3 border-2 border-white text-white rounded-full bg-transparent hover:bg-blue-600 transition duration-300 hover:text-white focus:outline-none mx-auto block">
+            Contact Us
+        </button>
     </div>
-</header>
 
-<div id="mobileMenu" class="lg:hidden hidden bg-blue-600 text-white p-4">
-    <a href="#home" class="block py-2 nav-link text-gray-300 hover:text-gray-400 transition duration-300" onclick="setActiveLink('home')">Home</a>
-    <a href="#who-we-are" class="block py-2 nav-link text-gray-300 hover:text-gray-400 transition duration-300" onclick="setActiveLink('who-we-are')">Who We Are</a>
-    <a href="#what-we-do" class="block py-2 nav-link text-gray-300 hover:text-gray-400 transition duration-300" onclick="setActiveLink('what-we-do')">What We Do</a>
-    <a href="#our-team" class="block py-2 nav-link text-gray-300 hover:text-gray-400 transition duration-300" onclick="setActiveLink('our-team')">Our Team</a>
-    <a href="#blog" class="block py-2 nav-link text-gray-300 hover:text-gray-400 transition duration-300" onclick="setActiveLink('blog')">Blog</a>
-    <button class="px-4 py-2 sm:px-6 sm:py-3 border-2 border-white text-white rounded-full bg-transparent hover:bg-blue-600 transition duration-300 hover:text-white focus:outline-none mx-auto block">
-        Contact Us
-    </button>
-</div>
-
-<section class="relative bg-cover bg-center bg-[radial-gradient(circle,_#3D4AF6_100%,_#303099_100%)] h-screen flex flex-col justify-center text-center px-4 py-8">
-    <div class="absolute inset-0 "></div>
-    <div class="relative z-10 text-white">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-indigo-300 via-gray-400 to-blue-500 bg-clip-text text-transparent">
+    <section
+    class="relative mt-[-10px] lg:mt-[-70px] bg-cover bg-center bg-[radial-gradient(circle,_#3D4AF6_100%,_#303099_100%)] h-screen flex flex-col justify-center text-center px-4 py-8">
+    <div class="relative z-10 text-white flex flex-col sm:flex-row items-center sm:justify-between">
+        <!-- Text aligned to the left on mobile, on top of the image -->
+        <h1 class="text-2xl sm:text-5xl md:text-6xl lg:text-[100px] font-extrabold mb-4 bg-gradient-to-r from-indigo-300 via-gray-400 to-blue-500 bg-clip-text text-transparent sm:mb-0 sm:flex-1 sm:text-left text-left">
             Innovate. Impact. Sustain.
         </h1>
-        <div class="flex justify-center mt-8 sm:mt-12 md:mt-16">
-            <img src="./images/frame.png" alt="Frame" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
-        </div>
-        <p class="text-lg sm:text-xl md:text-2xl font-light mb-6">
-            Empowering Africa’s technological future with cutting-edge, sustainable solutions.
-        </p>
-        <div class="flex justify-center gap-6">
-            <button class="bg-blue-600 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">Learn More</button>
-            <button class="bg-blue-600 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">Our Solutions</button>
-        </div>
     </div>
-</section>
-
-<section class="bg-white text-center py-20 px-4 flex-grow">
-    <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
-    <p class="text-lg sm:text-xl text-gray-600 mb-8">We provide amazing solutions for your business.</p>
-    <a href="#services" class="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300" onclick="setActiveLink('services')">Learn More</a>
-</section>
-
-<footer class="bg-blue-600 text-white py-6 mt-auto">
-    <div class="text-center">
-        <p>&copy; 2025 Orcta Technologie. All rights reserved.</p>
+    
+    <div class="relative z-0 flex justify-center sm:justify-end mt-[-10px] lg:mt-[-60px] absolute inset-0">
+        <!-- Image centered on mobile and aligned to the right on larger screens -->
+        <img src="./images/frame.png" alt="Frame" class="max-w-xs sm:max-w-xs md:max-w-sm lg:max-w-md object-cover">
     </div>
-</footer>
+    
+    <p class="font-light text-white text-lg sm:text-xl md:text-2xl lg:text-3xl text-center sm:text-left lg:text-left py-12 px-8 sm:px-12 md:px-16 rounded-lg bg-gradient-to-b from-blue-500 to-indigo-800 w-auto max-w-4xl sm:max-w-3xl md:max-w-2xl lg:max-w-xl mx-auto whitespace-normal lg:absolute lg:left-10 lg:top-1/2 lg:transform lg:-translate-y-1/2">
+        Empowering Africa’s technological <br/>future with cutting-edge, sustainable solutions.
+    </p>
+    
+        <br/>
+        
+        
 
-<script src="JS/scripts.js"></script>
+        <div class="flex justify-center sm:justify-start gap-6 ml-0 sm:ml-20">
+            <button class="text-white py-3 px-6 rounded-full border-2 border-white shadow-lg hover:bg-blue-600 hover:text-white transition duration-300">
+                Learn More
+            </button>
+            <button class="text-white py-3 px-6 rounded-full border-2 border-white shadow-lg hover:bg-blue-600 hover:text-white transition duration-300">
+                Our Solutions
+            </button>
+        </div>
+        
+        
+        
+        
+    </section>
+
+
+
+    <section class="bg-white text-center py-20 px-4 flex-grow">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+        <p class="text-lg sm:text-xl text-gray-600 mb-8">We provide amazing solutions for your business.</p>
+        <a href="#services"
+            class="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300"
+            onclick="setActiveLink('services')">Learn More</a>
+    </section>
+
+    <footer class="bg-blue-600 text-white py-6 mt-auto">
+        <div class="text-center">
+            <p>&copy; 2025 Orcta Technologie. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="JS/scripts.js"></script>
 
 </body>
+
 </html>
