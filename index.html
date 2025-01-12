@@ -1,231 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orcta Technologies</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("hidden");
+        }
+    </script>
 </head>
+<body class="font-sans bg-gray-50 flex flex-col min-h-screen">
 
-<body>
-    <header class="navbar">
-        <div class="container">
-            <nav id="navlinks">
-                <a href="#" id="logo">
-                    <img src="./images/logo.png" alt="Logo" style="max-width: 150px; height: auto;">
-                </a>
+<!-- Header Section (Sticky) -->
+<header class="bg-blue-600 p-4 text-white sticky top-0 z-50 shadow-lg">
+    <div class="flex justify-between items-center">
+        <div class="text-2xl font-bold">
+            <a href="#">Brand</a>
+        </div>
+        <div class="lg:hidden">
+            <button onclick="toggleMenu()" class="text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <nav class="hidden lg:flex space-x-6">
+            <a href="#" class="hover:text-gray-300">Home</a>
+            <a href="#about" class="hover:text-gray-300">About</a>
+            <a href="#services" class="hover:text-gray-300">Services</a>
+            <a href="#contact" class="hover:text-gray-300">Contact</a>
+        </nav>
+    </div>
+</header>
 
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="lg:hidden hidden bg-blue-600 text-white p-4">
+    <a href="#" class="block py-2">Home</a>
+    <a href="#about" class="block py-2">About</a>
+    <a href="#services" class="block py-2">Services</a>
+    <a href="#contact" class="block py-2">Contact</a>
+</div>
 
-
-                <!-- Hamburger Menu for Mobile -->
-                <div class="hamburger" onclick="toggleMenu()">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-
-                <ul id="ul-list">
-                    <li><a href="#" class="navitem active">Home</a></li>
-                    <li><a href="#" class="navitem">Who We Are</a></li>
-                    <li><a href="#" class="navitem">What We Do</a></li>
-                    <li><a href="#" class="navitem">Our Team</a></li>
-                    <li><a href="#" class="navitem">Blog</a></li>
-                    <button class="btn" id="btnbtn">Contact Us</button>
-                </ul>
-
-            </nav>
-            <div style="
-            font-family: Montserrat;
-            font-size: 96px;
-            font-weight: 700;
-            line-height: 117.02px;
-            text-align: left;
-            text-underline-position: from-font;
-            text-decoration-skip-ink: none;
-            color: transparent; 
-            background: linear-gradient(90deg, #C6CAF9 0%, #D9D9D9 53.4%, #A4A9EB 100%);
-            -webkit-background-clip: text;
-            opacity: 1; 
-            width: 1304px;
-            height: 117px;
-            position: absolute;
-            top: 138px;
-            left: 68px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        ">
-                Innovate. Impact. Sustain.
-            </div>
-
-
-
-            <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
-                <div style="flex: 1; padding-right: 50px;">
-                    <div
-                        style="font-family: Montserrat; font-weight: 300; font-size: 18px; line-height: 29.26px; text-align: center; color: white; padding: 50px; border-radius: 15px; background: linear-gradient(to bottom, rgba(0, 0, 255, 0.458), rgba(38, 38, 131, 0.677)); width: 200%; margin: 0 auto;">
-                        Empowering Africa’s technological future with cutting-edge, sustainable solutions.
-                    </div>
-
-                </div>
-
-                <div style="flex: 1; text-align: center;">
-                    <img src="./images/frame.png" alt="Frame"
-                        style="max-width: 450px; height: auto; float: right; margin-left: 500px;">
-
-                </div>
-
-            </div>
-
-            <div style="display: flex; gap: 50px; margin-top: 20px;  margin-left: 150px;">
-                <button class="btn" id="btnbtn">Learn More</button>
-                <button class="btn" id="btnbtn">Our Solutions</button>
-            </div>
-
-    </header>
-
-    <section >
-
+<!-- Hero Section -->
+<section class="relative bg-cover bg-center h-screen" style="background-image: url('https://via.placeholder.com/1600x900');">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="relative z-10 flex items-center justify-center h-full text-center text-white px-4">
         <div>
-            <img src="./images/Ellipse 27.png" alt="">
-            <img src="./images/Men_Pointing_Thumbs_Up-removebg-preview 1.png" alt="">
+            <h1 class="text-5xl font-extrabold mb-4 leading-tight">Transform Your Business with Our Solutions</h1>
+            <p class="text-lg mb-6">We offer innovative tools to drive your success in the digital age.</p>
+            <a href="#contact" class="bg-blue-600 py-3 px-6 text-xl font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
+                Get Started
+            </a>
         </div>
-        <div >
-            <h1>Pioneering Innovaton, <br>Shaping  better <br> Tomorrow</h1>
-            <p>ORCTA is a tech-driven company with a mission to <br>
-                empower Africa and the world through innovative and sustainable <br> technology solutions. 
-            </p>
-            <p> Inspired by the octopus’s intelligence and adaptability, we <br>
-                deliver tailored solutions in software, hardware, electronics, <br>
-                and robotics.</p>
+    </div>
+</section>
 
-                <button class="btn" id="btnbtn">Our Solutions</button>
-           
-        </div>
-        
-    </section>
+<!-- Body Section -->
+<section class="bg-white text-center py-20 px-4 flex-grow">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Services</h2>
+    <p class="text-lg text-gray-600 mb-8">We provide amazing solutions for your business.</p>
+    <a href="#services" class="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300">Learn More</a>
+</section>
 
-    <section id="about-section">
-        <div class="content-block">
-            <h2 class="section-title">About Us</h2>
-            <p class="section-text">
-                Orcta Technologies is your trusted partner in navigating the digital landscape, combining innovative
-                hardware and software solutions to bring your business vision to life. We are dedicated to delivering
-                tailored, high-quality technology solutions with a focus on client success and exceptional customer
-                service. At Orcta Technologies, we don't just build projects; we build the future, together.
-            </p>
-        </div>
-
-        <div class="content-block">
-            <h2 class="section-title">Our Mission</h2>
-            <p class="section-text">
-                Develop innovative technological solutions that enhance lives. Address everyday challenges through
-                advanced technology. Promote digital inclusion and accessibility. Foster societal impact through
-                technology-driven solutions.
-            </p>
-        </div>
-
-        <div class="content-block">
-            <h2 class="section-title">Our Vision</h2>
-            <p class="section-text">
-                Orcta Technologies aims to become a global leader in technological innovation, providing integrated
-                hardware and software solutions that empower businesses and individuals to achieve their full potential.
-                We strive to create a lasting impact through our commitment to excellence, client-centric approach, and
-                continuous adaptation to the evolving digital landscape.
-            </p>
-        </div>
-    </section>
-
-
-    <section id="features" class="features">
-        <div class="container">
-            <h2>Features</h2>
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <h3>Message</h3>
-                    <p> We solve customers' challenges by providing tailored hardware and software solutions that
-                        simplify operations, enhance productivity, and make technology accessible. By transforming
-                        complex ideas into impactful innovations, we empower businesses and individuals to thrive in the
-                        digital landscape.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>Outcome</h3>
-                    <p>We create impactful results by delivering innovative and scalable solutions tailored to each
-                        client's needs, improving operational efficiency and digital literacy. Through active
-                        collaboration and deep technical expertise, we transform customer visions into practical,
-                        cutting-edge products that drive growth and accessibility. </p>
-                </div>
-                <div class="feature-item">
-                    <h3>Project Management and Engagement</h3>
-                    <p>Our process begins with an initial consultation to understand customer needs and goals. A
-                        detailed needs assessment follows, leading to a tailored proposal. After agreeing to the
-                        proposal and making payment, our team develops the solution, keeping the customer informed
-                        throughout. The final product is delivered via the client’s preferred platform, ensuring
-                        satisfaction and alignment with their vision. </p>
-                </div>
-                <div class="feature-item">
-                    <h3>Marketing</h3>
-                    <p>We create impactful results by delivering innovative and scalable solutions tailored to each
-                        client's needs, improving operational efficiency and digital literacy. Through active
-                        collaboration and deep technical expertise, we transform customer visions into practical,
-                        cutting-edge products that drive growth and accessibility. </p>
-                </div>
-                <div class="feature-item">
-                    <h3>Products</h3>
-                    <p>The primary product consists of both hardware and software, designed to enhance daily life with
-                        user-centric technological solutions. Its impact includes greater convenience and empowerment
-                        for users, resulting in a more fulfilling and efficient experience in their everyday activities.
-                    </p>
-                </div>
-                <div class="feature-item">
-                    <h3>Production and Delivery</h3>
-                    <p> The production system involves gathering necessary information, selecting the best production
-                        methods and tools, and hiring workers if required. It includes creating the initial product,
-                        testing for errors and bugs, and finalizing the product after refinement. This ensures an
-                        efficient and error-free product ready for release.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--
-    <section id="tech-section">
-        <h2 class="section-header">Meet Our Tech Innovators</h2>
-        <div class="tech-grid">
-            <div class="tech-card">
-                <h3 class="tech-name">Harrison Ankah</h3>
-                <p class="tech-role">President</p>
-                <button class="learn-more-btn" onclick="showInfo('Harrison Ankah', 'Oversees company vision and strategy, leads the executive team, manages key client relations, and makes high-level decisions. ')">Learn More</button>
-            </div>
-            <div class="tech-card">
-                <h3 class="tech-name">Bright Sefah</h3>
-                <p class="tech-role">Chief Operating Officer</p>
-                <button class="learn-more-btn" onclick="showInfo('Bright Sefah', 'Manages day-to-day operations, oversees Wikie, ensures resource allocation, and handles project execution efficiency. ')">Learn More</button>
-            </div>
-            <div class="tech-card">
-                <h3 class="tech-name">Bernard Katamanso</h3>
-                <p class="tech-role">Chief Technical Officer</p>
-                <button class="learn-more-btn" onclick="showInfo('Bernard Katamanso', 'Leads the development of technical strategies, manages frontend and backend development, oversees hardware and software integration, and ensures the quality of products.')">Learn More</button>
-            </div>
-        </div>
-        <div id="info-modal" class="modal hidden">
-            <div class="modal-content">
-                <span class="close-btn" onclick="closeModal()">×</span>
-                <h3 id="modal-name"></h3>
-                <p id="modal-info"></p>
-            </div>
-        </div>
-    </section>
--->
-
-    <script src="./JS/script.js"></script>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 OrctaTechnologies. All rights reserved.</p>
-        </div>
-    </footer>
+<!-- Footer Section -->
+<footer class="bg-blue-600 text-white py-6 mt-auto">
+    <div class="text-center">
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </div>
+</footer>
 
 </body>
-
 </html>
