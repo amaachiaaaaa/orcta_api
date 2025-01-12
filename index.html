@@ -131,11 +131,9 @@
             </div>
         </div>
     </section>
-    <section
-        class="bg-gradient-to-b from-white via-white to-gray-300 py-20 px-4 flex-grow w-full min-h-screen flex flex-col justify-center items-center">
-        <div class="flex items-center justify-center flex-col text-center ">
-            <!-- Title and Description -->
-            <div class="sm:w-1/2 text-center px-6 mb-8 ">
+    <section class="bg-gradient-to-b from-white via-white to-gray-300 py-20 px-4 flex-grow w-full">
+        <div class="flex items-center justify-center h-full">
+            <div class="sm:w-1/2 text-center px-6">
                 <div class="flex flex-wrap items-center justify-center text-center">
                     <h2 class="text-xl sm:text-3xl font-bold text-[#3741C5] mb-1 mr-2">Innovative Solutions</h2>
                     <span class="text-xl sm:text-3xl font-bold text-black mb-1">Tailored for Impact</span>
@@ -144,82 +142,97 @@
                     From software development to robotics, we provide scalable solutions designed to transform
                     industries and lives.
                 </span>
+                <br /><br />
             </div>
-
-            <!-- Card Section -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6 mb-8">
-                <!-- Card 1 -->
-                <div
-                    class="bg-white p-6 rounded-lg shadow-lg relative overflow-hidden aspect-w-1 aspect-h-1 flex flex-col  transform transition-transform duration-300 hover:scale-105">
-                    <h3 class="text-xl font-bold text-[#3741C5] mb-2">Software Solutions</h3>
-                    <p class="text-blue-900 mb-4 flex-grow">
-                        <span class="block">Innovative applications</span>
-                        <span class="block">designed to optimize</span>
-                        <span class="block">operations and drive</span>
-                        <span class="block">efficiency.</span>
-                    </p>
-                    <img src="./images/Ellipse.png" alt="Ellipse"
-                        class="absolute bottom-[-10px] right-[-10px] w-30 h-30 object-contain">
-                    <img src="./images/Vector.png" alt="Vector"
-                        class="absolute bottom-3 right-6 w-10 h-10 object-contain">
-                </div>
-
-                <!-- Card 2 -->
-                <div
-                    class="bg-white p-6 rounded-lg shadow-lg relative overflow-hidden aspect-w-1 aspect-h-1 flex flex-col  transform transition-transform duration-300 hover:scale-105">
-                    <h3 class="text-xl font-bold text-[#3741C5] mb-2">Hardware Development</h3>
-                    <p class="text-blue-900 mb-4 flex-grow">
-                        <span class="block">Custom-built devices</span>
-                        <span class="block">tailored to meet unique</span>
-                        <span class="block">business needs.</span>
-                    </p>
-                    <img src="./images/Ellipse.png" alt="Ellipse"
-                        class="absolute bottom-[-10px] right-[-10px] w-30 h-30 object-contain">
-                    <img src="./images/Group.png" alt="Vector"
-                        class="absolute bottom-3 right-6 w-10 h-10 object-contain">
-                </div>
-
-                <!-- Card 3 -->
-                <div
-                    class="bg-white p-6 rounded-lg shadow-lg relative overflow-hidden aspect-w-1 aspect-h-1 flex flex-col  transform transition-transform duration-300 hover:scale-105">
-                    <h3 class="text-xl font-bold text-[#3741C5] mb-2">Electronic Designs</h3>
-                    <p class="text-blue-900 mb-4 flex-grow">
-                        <span class="block">Sophisticated electronic</span>
-                        <span class="block">systems powering next</span>
-                        <span class="block">generation technology.</span>
-                    </p>
-                    <img src="./images/Ellipse.png" alt="Ellipse"
-                        class="absolute bottom-[-10px] right-[-10px] w-30 h-30 object-contain">
-                    <img src="./images/Hardware.png" alt="Vector"
-                        class="absolute bottom-3 right-6 w-10 h-10 object-contain">
-                </div>
-
-                <!-- Card 4 -->
-                <div
-                    class="bg-white p-6 rounded-lg shadow-lg relative overflow-hidden aspect-w-1 aspect-h-1 flex flex-col  transform transition-transform duration-300 hover:scale-105">
-                    <h3 class="text-xl font-bold text-[#3741C5] mb-2">Robotics Engineering</h3>
-                    <p class="text-blue-900 mb-4 flex-grow">
-                        <span class="block">Smart automation</span>
-                        <span class="block">solutions addressing</span>
-                        <span class="block">real-world challenges.</span>
-                    </p>
-                    <img src="./images/Ellipse.png" alt="Ellipse"
-                        class="absolute bottom-[-10px] right-[-10px] w-30 h-30 object-contain">
-                    <img src="./images/Robotics.png" alt="Vector"
-                        class="absolute bottom-3 right-6 w-10 h-10 object-contain">
-                </div>
-            </div>
-            <br /><br /><br />
-            <!-- Discover Our Services Button -->
-            <a href="#services"
-                class="text-blue-600 py-3 px-6 rounded-[10px] border-2 border-blue-600 shadow-lg hover:bg-blue-600 hover:text-white transition duration-300"
-                onclick="setActiveLink('services')">Discover Our Services</a>
         </div>
+
+        <!-- Card Section -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg relative overflow-hidden aspect-w-1 aspect-h-1 flex flex-col">
+                <h3 class="text-xl font-bold text-[#3741C5] mb-2">Software Solutions</h3>
+                <p class="text-blue-900 mb-4 flex-grow">
+                    <span class="block">Innovative applications</span>
+                    <span class="block">designed to optimize</span>
+                    <span class="block">operations and drive</span>
+                    <span class="block">efficiency.</span>
+                </p>
+
+                <!-- Ellipse image at the bottom-right, smaller size -->
+                <img src="./images/Ellipse.png" alt="Ellipse"
+                    class="absolute bottom-[-10px] right-[-10px] w-30 h-30 object-contain">
+
+                <!-- Vector image centered on top of Ellipse, reduced size -->
+                <img src="./images/Vector.png" alt="Vector" class="absolute bottom-3 right-6 w-10 h-10 object-contain">
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg relative overflow-hidden aspect-w-1 aspect-h-1 flex flex-col">
+                <h3 class="text-xl font-bold text-[#3741C5] mb-2">Hardware Development</h3>
+                <p class="text-blue-900 mb-4 flex-grow">
+                    <span class="block">Custom-built devices</span>
+                    <span class="block">tailored to meet unique</span>
+                    <span class="block">business needs.</span>
+                </p>
+
+                <!-- Ellipse image at the bottom-right, smaller size -->
+                <img src="./images/Ellipse.png" alt="Ellipse"
+                    class="absolute bottom-[-10px] right-[-10px] w-30 h-30 object-contain">
+
+                <!-- Vector image centered on top of Ellipse, reduced size -->
+                <img src="./images/Group.png" alt="Vector" class="absolute bottom-3 right-6 w-10 h-10 object-contain">
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg relative overflow-hidden aspect-w-1 aspect-h-1 flex flex-col">
+                <h3 class="text-xl font-bold text-[#3741C5] mb-2">Electronic Designs</h3>
+                <p class="text-blue-900 mb-4 flex-grow">
+                    <span class="block">Sophisticated electronic</span>
+                    <span class="block">systems powering next</span>
+                    <span class="block">generation technology.</span>
+
+                </p>
+
+                <!-- Ellipse image at the bottom-right, smaller size -->
+                <img src="./images/Ellipse.png" alt="Ellipse"
+                    class="absolute bottom-[-10px] right-[-10px] w-30 h-30 object-contain">
+
+                <!-- Vector image centered on top of Ellipse, reduced size -->
+                <img src="./images/Hardware.png" alt="Vector"
+                    class="absolute bottom-3 right-6 w-10 h-10 object-contain">
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg relative overflow-hidden aspect-w-1 aspect-h-1 flex flex-col">
+                <h3 class="text-xl font-bold text-[#3741C5] mb-2">Robotics Engineering</h3>
+                <p class="text-blue-900 mb-4 flex-grow">
+                    <span class="block">Smart automation</span>
+                    <span class="block">solutions addressing</span>
+                    <span class="block">real-world challenges.</span>
+                </p>
+
+                <!-- Ellipse image at the bottom-right, smaller size -->
+                <img src="./images/Ellipse.png" alt="Ellipse"
+                    class="absolute bottom-[-10px] right-[-10px] w-30 h-30 object-contain">
+
+                <!-- Vector image centered on top of Ellipse, reduced size -->
+                <img src="./images/Robotics.png" alt="Vector"
+                    class="absolute bottom-3 right-6 w-10 h-10 object-contain">
+            </div>
+            <br /><br /> <br />
+            <div class="flex items-center justify-center ">
+                <button>
+                    <a href="#services"
+                       class="text-blue-600 py-3 px-6 rounded-[10px] border-2 border-blue-600 shadow-lg hover:bg-blue-600 hover:text-white transition duration-300"
+                       onclick="setActiveLink('services')">Discover Our Services</a>
+                </button>
+            </div>
+            
     </section>
     <section class="bg-gradient-to-b from-white via-white to-gray-300 py-20 px-4 flex-grow">
         <div class="flex flex-wrap items-center justify-center text-center">
             <h2 class="text-xl sm:text-3xl font-bold text-[#3741C5] mb-1 mr-2">Why Work</h2>
-            <span class="text-xl sm:text-3xl font-bold text-black mb-1">With ORCTA?</span>
+            <span class="text-xl sm:text-3xl font-bold text-black mb-1">With ORCTA</span>
         </div>
         <br /><br /><br /><br /><br />
         <div class="flex flex-col sm:flex-row items-center sm:items-start">
@@ -228,7 +241,7 @@
                 <!-- Display all cards vertically -->
                 <div class="space-y-6">
                     <!-- Card 1 -->
-                    <div class="flex sm:flex-row flex-col items-start bg-white p-4 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <div class="flex sm:flex-row flex-col items-start bg-white p-4 rounded-lg shadow-md">
                         <img src="./images/Groups.png" alt="Electronics Design" class="w-12 h-12 mb-4 sm:mr-6 sm:mb-0">
                         <div>
                             <h3 class="font-semibold text-[#3741C5] text-lg mb-2">Electronics Design</h3>
@@ -236,7 +249,7 @@
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="flex sm:flex-row flex-col items-start bg-white p-4 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <div class="flex sm:flex-row flex-col items-start bg-white p-4 rounded-lg shadow-md">
                         <img src="./images/Group1.png" alt="Electronics Design" class="w-12 h-12 mb-4 sm:mr-6 sm:mb-0">
                         <div>
                             <h3 class="font-semibold text-[#3741C5] text-lg mb-2">Electronics Design</h3>
@@ -244,7 +257,7 @@
                         </div>
                     </div>
                     <!-- Card 3 -->
-                    <div class="flex sm:flex-row flex-col items-start bg-white p-4 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <div class="flex sm:flex-row flex-col items-start bg-white p-4 rounded-lg shadow-md">
                         <img src="./images/Group2.png" alt="Electronics Design" class="w-12 h-12 mb-4 sm:mr-6 sm:mb-0">
                         <div>
                             <h3 class="font-semibold text-[#3741C5] text-lg mb-2">Electronics Design</h3>
@@ -252,7 +265,7 @@
                         </div>
                     </div>
                     <!-- Card 4 -->
-                    <div class="flex sm:flex-row flex-col items-start bg-white p-4 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <div class="flex sm:flex-row flex-col items-start bg-white p-4 rounded-lg shadow-md">
                         <img src="./images/Group3.png" alt="Electronics Design" class="w-12 h-12 mb-4 sm:mr-6 sm:mb-0">
                         <div>
                             <h3 class="font-semibold text-[#3741C5] text-lg mb-2">Electronics Design</h3>
@@ -263,27 +276,34 @@
             </div>
     
             <!-- Text on the right side of the image on larger screens, below the image on mobile -->
-            <div class="sm:w-1/2 text-center sm:text-left px-6">
-                <div class="flex flex-wrap items-center justify-center text-center">
-                    <h2 class="text-xl sm:text-3xl font-bold text-[#3741C5] mb-1 mr-2">Pioneering Innovation,</h2>
-                    <span class="text-xl sm:text-3xl font-bold text-black mb-1">Shaping a Better Tomorrow</span>
+            <div class="sm:w-1/2 text-center sm:text-left px-6 relative">
+                <div class="flex flex-wrap items-center justify-center text-center relative">
+                    <!-- Image 1 Container -->
+                    <div class="w-full absolute top-0 left-0">
+                        <img src="./images/Rectangle77.png" alt="Image 1" class="w-[80%]">
+                    </div>
+                    
+                    <!-- Image 2 Container -->
+                    <div class="w-full absolute top-0 left-0">
+                        <img src="./images/Frame338.png" alt="Image 2" class="w-[40%] mx-auto ml-[80px] mt-[-50px]">
+                    </div>
+                    
+                    <!-- Image 3 Container -->
+                    <div class="w-full absolute left-0">
+                        <img src="./images/Frame341.png" alt="Image 3" class="w-[40%] mx-auto mr-[250px] mt-[400px]">
+                    </div>
+                    
+                    <!-- Button -->
+                    <a href="#services"
+                       class="text-blue-600 py-3 px-6 rounded-[10px] border-2 border-blue-600 shadow-lg hover:bg-blue-600 hover:text-white transition duration-300"
+                       onclick="setActiveLink('services')">Our Solution</a>
                 </div>
-    
-                <br /><br />
-                <p class="text-lg sm:text-xl text-gray-600 mb-8">
-                    ORCTA is a tech-driven company with a mission to empower Africa and the world through innovative and
-                    sustainable technology solutions.<br /><br />
-                    Inspired by the octopus’s intelligence and adaptability, we deliver tailored solutions in software,
-                    hardware, electronics, and robotics.
-                </p>
-                <br /><br /> <br />
-                <a href="#services"
-                    class="text-blue-600 py-3 px-6 rounded-[10px] border-2 border-blue-600 shadow-lg hover:bg-blue-600 hover:text-white transition duration-300"
-                    onclick="setActiveLink('services')">Our Solution</a>
             </div>
+            
+            
+            
         </div>
     </section>
-    
     
     
 
