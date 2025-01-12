@@ -297,7 +297,7 @@
         </div>
     </section>
 
-    <section class="bg-gradient-to-b from-white via-white to-gray-300 py-20 px-4 flex-grow">
+    <section class="bg-white  py-20 px-4 flex-grow">
         <div class="flex flex-wrap items-center justify-center text-center">
             <h2 class="text-xl sm:text-3xl font-bold text-[#3741C5] mb-1 mr-2">Why Work</h2>
             <span class="text-xl sm:text-3xl font-bold text-black mb-1">With ORCTA</span>
@@ -307,45 +307,49 @@
         <div class="flex flex-col sm:flex-row items-center sm:items-start">
             <!-- Image Section (Capture Image) - appears first on mobile -->
            
-            <!-- Form Section -->
-            <div class="sm:w-1/2 mb-8 sm:mb-0 px-6 order-2 sm:order-none">
-                <form class="bg-white p-8 rounded-lg shadow-md space-y-6">
-                    <!-- First Name -->
-                    <div>
-                        <label for="first-name" class="block text-sm font-semibold text-[#3741C5] mb-2">First Name</label>
-                        <input type="text" id="first-name" name="first-name" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Enter your first name" required>
-                    </div>
-                    
-                    <!-- Last Name -->
-                    <div>
-                        <label for="last-name" class="block text-sm font-semibold text-[#3741C5] mb-2">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Enter your last name" required>
-                    </div>
-                    
-                    <!-- Email Address -->
-                    <div>
-                        <label for="email" class="block text-sm font-semibold text-[#3741C5] mb-2">Email Address</label>
-                        <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Enter your email" required>
-                    </div>
-        
-                    <!-- Message -->
-                    <div>
-                        <label for="message" class="block text-sm font-semibold text-[#3741C5] mb-2">Message</label>
-                        <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Write your message" required></textarea>
-                    </div>
-        
-                    <!-- Agree to Terms -->
-                    <div class="flex items-center">
-                        <input type="checkbox" id="agree" name="agree" class="w-4 h-4 text-[#3741C5]" required>
-                        <label for="agree" class="ml-2 text-sm text-gray-600">I agree to the <a href="#" class="text-[#3741C5]">Terms and Conditions</a>.</label>
-                    </div>
-        
-                    <!-- Submit Button -->
-                    <div>
-                        <button type="submit" class="w-full bg-[#3741C5] text-white py-3 rounded-lg font-semibold">Submit</button>
-                    </div>
-                </form>
+          <!-- Form Section -->
+<div class="sm:w-1/2 mb-8 sm:mb-0 px-6 order-2 sm:order-none">
+    <form class="bg-white p-8 rounded-lg shadow-md space-y-6">
+        <!-- First and Last Name Row -->
+        <div class="sm:flex sm:space-x-4">
+            <!-- First Name -->
+            <div class="sm:w-1/2 mb-4 sm:mb-0">
+                <label for="first-name" class="block text-sm font-semibold text-[#3741C5] mb-2">First Name</label>
+                <input type="text" id="first-name" name="first-name" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Enter your first name" required>
             </div>
+            
+            <!-- Last Name -->
+            <div class="sm:w-1/2">
+                <label for="last-name" class="block text-sm font-semibold text-[#3741C5] mb-2">Last Name</label>
+                <input type="text" id="last-name" name="last-name" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Enter your last name" required>
+            </div>
+        </div>
+        
+        <!-- Email Address -->
+        <div>
+            <label for="email" class="block text-sm font-semibold text-[#3741C5] mb-2">Email Address</label>
+            <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Message -->
+        <div>
+            <label for="message" class="block text-sm font-semibold text-[#3741C5] mb-2">Message</label>
+            <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Write your message" required></textarea>
+        </div>
+
+        <!-- Agree to Terms -->
+        <div class="flex items-center">
+            <input type="checkbox" id="agree" name="agree" class="w-4 h-4 text-[#3741C5]" required>
+            <label for="agree" class="ml-2 text-sm text-gray-600">I agree to our friendly privacy policy.</label>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+            <button type="submit" class="w-full bg-[#3741C5] text-white py-3 rounded-lg font-semibold">Submit</button>
+        </div>
+    </form>
+</div>
+
         
             <!-- Contact Information Section Below the Image -->
             <div class="sm:w-1/2 text-center sm:text-left px-6">
@@ -354,16 +358,16 @@
                 </div>
         <br/><br/>
                 <div class="space-y-4">
-                    <!-- Address -->
                     <div class="flex items-center justify-start">
                         <div class="bg-gray-200 p-3 rounded-full">
-                            <i class="fa fa-map-marker-alt text-[#3741C5]"></i>
+                            <i class="fa fa-envelope text-[#3741C5]"></i>
                         </div>
                         <div class="ml-4 text-left">
-                            <p class="text-sm font-semibold text-[#3741C5]">Address</p>
-                            <p class="text-gray-600">1234 Street Name, City, Country</p>
+                            <p class="text-sm font-semibold text-[#3741C5]">Email</p>
+                            <p class="text-gray-600">orcta@gmail.com</p>
                         </div>
                     </div>
+                   
                     
                     <!-- Phone -->
                     <div class="flex items-center justify-start">
@@ -372,20 +376,20 @@
                         </div>
                         <div class="ml-4 text-left">
                             <p class="text-sm font-semibold text-[#3741C5]">Phone</p>
-                            <p class="text-gray-600">+123 456 7890</p>
+                            <p class="text-gray-600">(+233) 551 853 711</p>
                         </div>
                     </div>
         
-                    <!-- Email -->
                     <div class="flex items-center justify-start">
                         <div class="bg-gray-200 p-3 rounded-full">
-                            <i class="fa fa-envelope text-[#3741C5]"></i>
+                            <i class="fa fa-map-marker-alt text-[#3741C5]"></i>
                         </div>
                         <div class="ml-4 text-left">
-                            <p class="text-sm font-semibold text-[#3741C5]">Email</p>
-                            <p class="text-gray-600">contact@orcta.com</p>
+                            <p class="text-sm font-semibold text-[#3741C5]">Address</p>
+                            <p class="text-gray-600">University of Mines and Technology (UMaT)</p>
                         </div>
                     </div>
+                   
                 </div>
             </div>
         </div>
